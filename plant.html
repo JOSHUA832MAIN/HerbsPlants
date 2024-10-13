@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mobile-Amin</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Container Layout */
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-bar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #ddd;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .nav-bar a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 10px 0;
+            color: #666;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-bar a.active {
+            color: #007bff;
+        }
+
+        .nav-bar a:hover {
+            color: #007bff;
+        }
+
+        /* Content Area */
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+       }
+
+       .nav-link {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        position: relative;
+       }
+
+       .nav-link:hover {
+         color: #FFD700;
+       }
+
+      
+        .button {
+            display: inline-block;
+            padding: 10px 15px; 
+            background-color: limegreen; 
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem; 
+            margin-top: 10px; 
+            border: none; 
+         
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                font-size: 1rem;
+            }
+            .button {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+            .nav-bar a {
+                font-size: 1rem;
+            }
+        }
+
+        .card {
+            border: 1px solid #8b7676;
+            padding: 10px;
+            width: 100%;
+            max-width: 290px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px rgba(135, 109, 109, 0.1);
+        }
+
+        .card img {
+            border-radius: 10px;
+            height: 270px;
+            width: 100%;
+        }
+
+        .card-move {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 10px; 
+            margin: 0 auto; 
+            padding: 20px 0; 
+        }
+
+        @media (min-width: 600px) {
+            .card {
+                max-width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h2>Herbs/Plants</h2>
+        </header>
+
+        <main class="content">
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-link">Homepage</a></li>
+                <li><a href="herbs.html" class="nav-link">Herbs</a></li>
+                <li><a href="plant.html" class="nav-link">Plants</a></li>
+        
+            </ul>
+        </main>
+
+        <div class="card-move">
+
+            <div class="card">
+                <img src="img/pencil-cactus-the-fresh-flower-company.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Pencil Cactus</h2>
+                </center>
+                <p>The pencil cactus, scientifically known as Euphorbia tirucalli, is a distinctive succulent plant belonging to the Euphorbiaceae family. Native to regions of Africa and parts of India, this plant is often recognized for its tall, slender, cylindrical stems, which can grow several feet high. </p>
+                <button class="button"><h3>Aesthetic Appeal</h3></button>
+                <button class="button"><h3>Low Maintenance</h3></button>
+                <button class="button"><h3>Environmental Benefits</h3></button>
+            </div>
+
+            <div class="card">
+                <img src="img/istockphoto-1174307239-612x612.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Candelabra</h2>
+                </center>
+                <p>The candelabra cactus, scientifically known as Euphorbia ingens, is a large, tree-like succulent that belongs to the Euphorbiaceae family. Here are some key features and benefits of the candelabra cactus:</p>
+                <button class="button"><h3>Rich in Nutrients</h3></button>
+                <button class="button"><h3>Supports Digestive Health</h3></button>
+                <button class="button"><h3>Hydration and Satiety</h3></button>
+            </div>
+
+            <div class="card">
+                <img src="img/istockphoto-1320236592-1024x1024.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Jade Plant</h2>
+                </center>
+                <p>The jade plant, scientifically known as Crassula ovata, is a popular succulent known for its thick, fleshy leaves and tree-like appearance. It is often referred to as the money tree or money plant due to its association with good luck and prosperity in some cultures. Here are some key features and benefits of the jade plant:</p>
+                <button class="button"><h3>Air Purification</h3></button>
+                <button class="button"><h3>Versatile Decor</h3></button>
+                <button class="button"><h3>Long Lifespan</h3></button>
+            </div>
+
+            <div class="card">
+                <img src="img/istockphoto-1306061565-1024x1024.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Letizia</h2>
+                </center>
+                <p>Letizia, often referred to as the Letizia plant or African violet (Saintpaulia), is a popular flowering houseplant known for its vibrant, colorful blooms and soft, fuzzy leaves. While "Letizia" may also refer to various contexts, here we'll focus on the characteristics and benefits of the African violet, which is sometimes associated with the name Letizia in specific regions.</p>
+                <button class="button"><h3>Aesthetic Appeal</h3></button>
+                <button class="button"><h3>Air Purification</h3></button>
+                <button class="button"><h3>Stress Reduction</h3></button>
+            </div>
+
+            <div class="card">
+                <img src="img/istockphoto-1393844704-1024x1024.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Sansevieria</h2>
+                </center>
+                <p>Sansevieria, commonly known as snake plant or mother-in-law's tongue, is a hardy succulent plant belonging to the Asparagaceae family. Known for its striking appearance and resilience, this plant is a popular choice for both indoor and outdoor gardening. Here are some key features and benefits of Sansevieria:</p>
+                <button class="button"><h3>Low Maintenance</h3></button>
+                <button class="button"><h3>Air Purification</h3></button>
+                <button class="button"><h3>Versatile Decor</h3></button>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Herbal Plant App. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

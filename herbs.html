@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mobile-Amin</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Container Layout */
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-bar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #ddd;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .nav-bar a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 10px 0;
+            color: #666;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-bar a.active {
+            color: #007bff;
+        }
+
+        .nav-bar a:hover {
+            color: #007bff;
+        }
+
+        /* Content Area */
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+       }
+
+       .nav-link {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        position: relative;
+       }
+
+       .nav-link:hover {
+         color: #FFD700;
+       }
+
+      
+        .button {
+            display: inline-block;
+            padding: 10px 15px; 
+            background-color: limegreen; 
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem; 
+            margin-top: 10px; 
+            border: none; 
+         
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                font-size: 1rem;
+            }
+            .button {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+            .nav-bar a {
+                font-size: 1rem;
+            }
+        }
+
+        .card {
+            border: 1px solid #8b7676;
+            padding: 10px;
+            width: 100%;
+            max-width: 290px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px rgba(135, 109, 109, 0.1);
+        }
+
+        .card img {
+            border-radius: 10px;
+            height: 300px;
+            width: 100%;
+        }
+
+        .card-move {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 10px; 
+            margin: 0 auto; 
+            padding: 20px 0; 
+        }
+
+        @media (min-width: 600px) {
+            .card {
+                max-width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h2>Herbs/Plants</h2>
+        </header>
+
+        <main class="content">
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-link">Homepage</a></li>
+                <li><a href="herbs.html" class="nav-link">Herbs</a></li>
+                <li><a href="plant.html" class="nav-link">Plants</a></li>
+        
+            </ul>
+        </main>
+
+        <div class="card-move">
+
+            <div class="card">
+                <img src="img/Attachment-1.jpeg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Agrimony</h2>
+                </center>
+                <p>Agrimony (Agrimonia eupatoria) is a perennial herb known for its medicinal properties and distinctive appearance. It belongs to the rose family (Rosaceae) and is native to Europe, but it can also be found in North America and parts of Asia.</p>
+                <button class="button"><h3>Digestive Health</h3></button>
+                <button class="button"><h3>Anti-inflammatory</h3></button>
+                <button class="button"><h3>Liver Health</h3></button>
+            </div>
+
+            <div class="card">
+                <img src="img/chiaplant1.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Chia Plant</h2>
+                </center>
+                <p>Chia (Salvia hispanica) is a flowering plant belonging to the mint family (Lamiaceae). It is native to Central America and was cultivated by the Aztecs and Mayans for its seeds, which are now popular as a superfood due to their high nutritional value.</p>
+                <button class="button"><h3>Rich in Nutrients</h3></button>
+                <button class="button"><h3>Supports Digestive Health</h3></button>
+                <button class="button"><h3>Hydration and Satiety</h3></button>
+            </div>
+
+            <div class="card">
+                <img src="img/gallery-1513289879-mint-plant.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Mint</h2>
+                </center>
+                <p>Mint (Mentha) is a fragrant herb that belongs to the Lamiaceae family. It is widely used in cooking, traditional medicine, and various personal care products.</p>
+                <button class="button"><h3>Aids Digestion</h3></button>
+                <button class="button"><h3>Natural Remedy for Colds</h3></button>
+                <button class="button"><h3>Culinary Uses</h3></button>
+            </div>
+
+            <div class="card">
+                <img src="img/istockphoto-914683814-1024x1024.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Aloe Vera</h2>
+                </center>
+                <p>Aloe Vera (Aloe barbadensis miller) is a succulent plant known for its thick, fleshy leaves and numerous health benefits.</p>
+                <button class="button"><h3>Skin Healing and Hydration</h3></button>
+                <button class="button"><h3>Digestive Health</h3></button>
+                <button class="button"><h3>Nutrient-Rich</h3></button>
+            </div>
+
+            <div class="card">
+                <img src="img/AMP_9588-708X466.jpg" alt="Card Image">
+                <center>
+                    <h2 style="color: green;">Basil</h2>
+                </center>
+                <p>Basil (Ocimum basilicum) is a fragrant herb known for its culinary uses and traditional medicine.</p>
+                <button class="button"><h3>Culinary Uses</h3></button>
+                <button class="button"><h3>Antioxidant Properties</h3></button>
+                <button class="button"><h3>Supports Digestive Health</h3></button>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Herbal Plant App. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
